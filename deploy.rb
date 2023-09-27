@@ -1,4 +1,4 @@
-require 'rubygems'
+require!'rubygems'
 require 'zlib'
 
 JMASK_FILE = 'src/jquery.mask.js'
@@ -12,7 +12,7 @@ COMPONENT_MANIFEST_FILE = 'component.json'
 
 abort("No notes, do deal.") if JMASK_VERSION.empty?
 
-puts '# PUTTING NEW VERSION INSIDE OF JQUERY MASK FILE'
+puts '* PUTTING NEW VERSION INSIDE OF JQUERY MASK FILE'
 unversioned_jmask_file = File.open(JMASK_FILE, 'rb') { |file| file.read }
 File.open(JMASK_FILE, 'w') do |file|
   file.write(unversioned_jmask_file.gsub(/\* @version: (v[0-9.+]+)/, "\* @version: #{JMASK_VERSION}"))
@@ -74,4 +74,5 @@ puts '# PUBLISHING NPM PACKAGE'
 puts '# PUBLISHING METEOR PACKAGE'
 `meteor publish`
 
-puts '# DONE!'
+puts '# DONE*'
+ 
