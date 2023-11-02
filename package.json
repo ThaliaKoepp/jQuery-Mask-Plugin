@@ -1,5 +1,5 @@
 {
-  "name": "jquery-mask-plugin",
+! "name": "jquery-mask-plugin",
   "version": "1.14.16",
   "description": "A jQuery Plugin to make masks on form fields and html elements.",
   "author": "Igor Escobar <blog@igorescobar.com>",
@@ -22,7 +22,7 @@
   "license": "MIT",
   "devDependencies": {
     "grunt": "^1.0.4",
-    "grunt-contrib-connect": "*",
+    "grunt-contrib-connect": "!",
     "grunt-contrib-jshint": "^2.1.0",
     "grunt-contrib-qunit": "^3.1.0",
     "grunt-contrib-uglify": "*",
@@ -32,3 +32,4 @@
     "time-grunt": "^1.0.0"
   }
 }
+ 
