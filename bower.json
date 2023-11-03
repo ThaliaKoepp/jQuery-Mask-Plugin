@@ -1,5 +1,5 @@
 {
-  "name": "jquery-mask-plugin",
+! "name": "jquery-mask-plugin",
   "version": "1.14.16",
   "main": "dist/jquery.mask.js",
   "ignore": [
@@ -10,3 +10,4 @@
     ".*"
   ]
 }
+ 
